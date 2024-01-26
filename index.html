@@ -17,7 +17,7 @@
   <body>
     <!-- header section -->
     <header class="header">
-      <nav class="pt-10 pl-20 pr-20 flex flex-row justify-between items-center">
+      <nav class="px-20 py-10 flex flex-row justify-between items-center">
         <div class="left-nav flex flex-row gap-5">
           <img src="./images/Air.png" alt="" class="img-nav" />
           <h2 class="hero-travel font-bold text-3xl">
@@ -25,7 +25,7 @@
           </h2>
         </div>
         <div class="right-nav flex flex-row gap-5 font-medium text-[#424247]">
-          <a class="text-[#FF5400] text-xl">Home</a>
+          <a class="text-[#FF5400] text-lg">Home</a>
           <a
             href="#"
             class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]"
@@ -50,9 +50,7 @@
       </nav>
     </header>
     <!-- banner section -->
-    <section
-      class="bg-[url('./images/Rectangle1.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-col justify-center items-center relative"
-    >
+    <section class="bg-[url('./images/Rectangle1.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-col justify-center items-center relative">
       <div
         class="bg-gradient-to-b rounded-xl from-black/70 to-black/5 w-full h-full absolute"
       ></div>
@@ -98,8 +96,44 @@
       </div>
     </section>
     <!-- Popular section -->
-    <section class="popular-section mt-10 ml-20 mr-20 flex flex-row">
+    <section class="Popular-section mx-20 mt-20 flex flex-row gap-28">
+        <div class="popular-left w-full">
+            <h1 class="our text-[#131318] text-5xl font-bold">Our Popular Tours</h1>
+            <p class="dolar-site text-gray-500 my-4">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
+                Sodales dictumst nec nibh pellentesque.</p>
+            <div class="cercle text-gray-500 my-4">
+                <li>
+                    Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat
+                        at .
+                </li>
+                <li>
+                     Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam. 
+                </li>
+                <li>
+                   Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.
+                </li>
+            </div>
+            <p class="amet text-gray-500 my-4">Amet consectetur. Vulputate commodo felis molestie risus
+                ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus
+                natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+            <button
+                class="btn-popular flex flex-row bg-[#FF5400] gap-5 rounded-md text-[#fff] px-12 py-3">Read
+                More</button>
+        </div>
+        <div class="Popular-section w-full">
+            <img src="./images/Popularcard.png" alt="" class="mount">
+        </div>
+    </section>
+    <!-- choose destination -->
+    <section class="choose-destination mx-20 mt-20 flex flex-col">
       <!-- popular heading -->
+      <div class="choose-top flex flex-col justify-center items-center">
+        <h1 class="choose-destination text-[#131318] font-extrabold text-4xl">Choose Your Destination</h1>
+        <p class="choose-para text-gray-500 font-normal text-base my-7 text-center">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. <br> Sodales dictumst nec nibh pellentesque.
+        </p>
+      </div>
       <!-- popular card container -->
       <div class="grid grid-cols-12 gap-5">
         <!-- card 1 -->
@@ -117,7 +151,7 @@
           <h3
             class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2"
           >
-            Maldives
+          Indonesia
           </h3>
         </div>
         <!-- card 3 -->
@@ -126,7 +160,7 @@
           <h3
             class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2"
           >
-            Maldives
+          Srilanka
           </h3>
         </div>
         <!-- card 4 -->
@@ -135,7 +169,7 @@
           <h3
             class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2"
           >
-            Maldives
+          North America
           </h3>
         </div>
         <!-- card 5 -->
@@ -144,7 +178,7 @@
           <h3
             class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2"
           >
-            Maldives
+          Kashmir
           </h3>
         </div>
         <!-- card 6 -->
@@ -153,7 +187,7 @@
           <h3
             class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2"
           >
-            Maldives
+          Banladesh
           </h3>
         </div>
         <!-- card 7 -->
@@ -162,58 +196,40 @@
           <h3
             class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2"
           >
-            Maldives
+          Bandarban
           </h3>
         </div>
       </div>
     </section>
-    <!-- Choose section -->
-    <section class="choose mt-10 ml-20 mr-20">
-      <div class="choose-top flex flex-col justify-center items-center">
-        <h1 class="choose-destination">Choose Your Destination</h1>
-        <p class="choose-para">
-          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-          odio sit massa. Sodales dictumst nec nibh pellentesque.
-        </p>
-      </div>
-      <div class="choose-down">
-        <div class="one grid grid-cols-2">
-          <div class="gridone">
-            <h1>Maldives</h1>
-          </div>
-          <div class="gridone">
-            <h1>Indonesia</h1>
-          </div>
-        </div>
-        <div class="two grid grid-cols-3">
-          <div class="gridone">
-            <h1>Srilanka</h1>
-          </div>
-          <div class="gridone">
-            <h1>North America</h1>
-          </div>
-          <div class="gridone">
-            <h1>Kashmir</h1>
-          </div>
-        </div>
-        <div class="three grid grid-cols-2">
-          <div class="gridone">
-            <h1>Banladesh</h1>
-          </div>
-          <div class="gridone">
-            <h1>Bandarban</h1>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- why-choose -->
-    <section class="why-choose">
-      <div class="why-choosetop">
-        <div class="why-choosetop1"></div>
-        <div class="why-choosetop2"></div>
-      </div>
+    <section class="why-choose mx-20 mt-20">
+        <div class="choose-top flex flex-col justify-center items-center">
+            <h1 class="choose-destination text-[#131318] font-extrabold text-4xl">Why Choose Us</h1>
+            <p class="choose-para text-gray-500 font-normal text-base my-7 text-center">
+              Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+              odio sit massa. <br> Sodales dictumst nec nibh pellentesque.
+            </p>
+          </div>
       <div class="why-choosedown">
-        <div class="why-choosedown1"></div>
+        <div class="two-card flex flex-row gap-5">
+            <div class="why-choosedown1 p-10 bg-rose-50">
+                <img src="./images/hotel1.png" alt="" class="why1">
+                <h1 class="handpicked text-[#131318] font-bold text-xl my-5">Handpicked Hotels</h1>
+                <p class="amet-consect my-5 text-[#5A5A5D]">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+            </div>
+            <div class="why-choosedown1 p-10 bg-cyan-50">
+                <img src="./images/Group.png" alt="" class="why1">
+                <h1 class="handpicked text-[#131318] font-bold text-xl my-5">World Class Service</h1>
+                <p class="amet-consect my-5 text-[#5A5A5D]">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+            </div>
+        </div>
+        <div class="why-choosedown2 w-[600px] m-auto bg-rose-50 mt-5 rounded-lg">
+            <div class="why-choosedown1 p-10">
+                <img src="./images/price-tag1.png" alt="" class="why1">
+                <h1 class="handpicked text-[#131318] font-bold text-xl my-5">Best Price Guarantee</h1>
+                <p class="amet-consect my-5 text-[#5A5A5D]">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+            </div>
+        </div>
       </div>
     </section>
     <!-- deals section -->
