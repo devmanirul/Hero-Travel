@@ -1,142 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Travel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header section -->
-    <header class="header ">
-        <nav class="pt-10 pl-20 pr-20 flex flex-row justify-between items-center">
-            <div class="left-nav flex flex-row gap-5">
-                <img src="./images/Air.png" alt="" class="img-nav">
-                <h2 class="hero-travel font-bold text-3xl">Hero <span class="text-[#FF5400]">Travel</span></h2>
-            </div>
-            <div class="right-nav flex flex-row gap-5 font-medium text-[#424247]">
-                <p class="text-[#FF5400] text-xl">Home</p>
-                <p>Packages</p>
-                <p>Testimonial</p>
-                <p>Blog</p>
-                <p>Contact</p>
-            </div>
-        </nav>
+    <header class="header">
+      <nav class="pt-10 pl-20 pr-20 flex flex-row justify-between items-center">
+        <div class="left-nav flex flex-row gap-5">
+          <img src="./images/Air.png" alt="" class="img-nav" />
+          <h2 class="hero-travel font-bold text-3xl">
+            Hero <span class="text-[#FF5400]">Travel</span>
+          </h2>
+        </div>
+        <div class="right-nav flex flex-row gap-5 font-medium text-[#424247]">
+          <a class="text-[#FF5400] text-xl">Home</a>
+          <a
+            href="#"
+            class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]"
+            >Packages</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]"
+            >Testimonial</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]"
+            >Contact</a
+          >
+        </div>
+      </nav>
     </header>
     <!-- banner section -->
     <section
-        class="banner mt-10 ml-20 mr-20 bg-cover h-svh max-w-9xl mx-auto bg-no-repeat rounded-md flex flex-col justify-center items-center ">
-        <div class="explore-travel flex flex-col justify-center items-center text-center">
-            <h1 class="explore text-[#fff] font-bold text-6xl">Explore Your Travel</h1>
-            <p class="dolor-sit text-center text-[#fff] ">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies
-                dolor adipiscing. In et odio <br> enim ac quis sapien urna eu phasellus.</p>
-            <div class="opa">
-                <div class="buttons flex flex-row gap-10 rounded-sm">
-                    <div class="btn bg-[#fff] text-[#7e6e6e] rounded-sm w-32">
-                        <button class="one">Where go</button>
-                    </div>
-                    <div class="button-two flex flex-row gap-5 bg-[#fff] text-[#7e6e6e] rounded-sm w-32">
-                        <button class="two">When</button>
-                        <img src="./images/Frame1(2).png" alt="" class="btn">
-                    </div>
-                    <div class="btn-img1 flex flex-row gap-5 w-32 bg-[#fff] text-[#7e636e] rounded-sm">
-                        <button class="three">Select-Type</button>
-                        <img src="./images/Frame1(2).png" alt="" class="btn">
-                    </div>
-                    <div
-                        class="btn-img2 flex flex-row bg-[#FF5400] w-30 gap-5 rounded-md text-[#fff] pl-5 pr-3 pt-0.5 pb-0.5">
-                        <img src="./images/Frame1(1).png" alt="" class="btn ">
-                        <button class="four text-sm">Find Now</button>
-                    </div>
-                </div>
-            </div>
+      class="bg-[url('./images/Rectangle1.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-col justify-center items-center relative"
+    >
+      <div
+        class="bg-gradient-to-b rounded-xl from-black/70 to-black/5 w-full h-full absolute"
+      ></div>
+
+      <div
+        class="explore-travel flex flex-col justify-center items-center text-center z-10"
+      >
+        <h1 class="explore text-[#fff] font-bold text-6xl">
+          Explore Your Travel
+        </h1>
+        <p class="dolor-sit mt-6 text-center text-[#fff]">
+          Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+          adipiscing. In et odio <br />
+          enim ac quis sapien urna eu phasellus.
+        </p>
+        <div
+          class="w-[800px] justify-between flex flex-row items-center gap-5 bg-white/40 rounded-md mt-10 p-5"
+        >
+          <input
+            class="w-3/12 p-4 rounded-md outline-none"
+            placeholder="When"
+          />
+          <div class="w-3/12">
+            <select class="w-full p-4 rounded-md outline-none" id="">
+              <option value="">When</option>
+              <option value="">8:30 PM</option>
+              <option value="">9:40 AM</option>
+              <option value="">12:00 PM</option>
+            </select>
+          </div>
+          <div class="w-3/12">
+            <select class="w-full p-4 rounded-md" id="">
+              <option value="">When</option>
+              <option value="">8:30 PM</option>
+              <option value="">9:40 AM</option>
+              <option value="">12:00 PM</option>
+            </select>
+          </div>
+          <button class="bg-[#FF5400] text-white py-4 px-8 rounded-md w-3/12">
+            Find Now
+          </button>
         </div>
+      </div>
     </section>
     <!-- Popular section -->
     <section class="popular-section mt-10 ml-20 mr-20 flex flex-row">
-        <div class="popular-left w-full">
-            <h1 class="our">Our Popular Tours</h1>
-            <p class="dolar-site">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                Sodales dictumst nec nibh pellentesque.</p>
-            <div class="cercle ">
-                <li>
-                    <p>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat
-                        at .</p>
-                </li>
-                <li>
-                    <p>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus
-                        suspendisse nullam.</p>
-                </li>
-                <li>
-                    <p> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</p>
-                </li>
-            </div>
-            <p class="amet">Amet consectetur. Vulputate commodo felis molestie risus
-                ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus
-                natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
-            <button
-                class="btn-popular flex flex-row bg-[#FF5400] w-32 gap-5 rounded-md text-[#fff] pl-5 pr-3 pt-0.5 pb-0.5">Read
-                More</button>
+      <div class="popular-left w-full">
+        <h1 class="our">Our Popular Tours</h1>
+        <p class="dolar-site">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+        <div class="cercle">
+          <li>
+            Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam
+            odio neque diam. Sociis erat at .
+          </li>
+          <li>
+            Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+            porta lacus. Lectus suspendisse nullam.
+          </li>
+          <li>
+            Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+            Risus at in.
+          </li>
         </div>
-        <div class="popular-right w-full">
-            <img src="./images/Rectangle4.png" alt="" class="popular-img">
-        </div>
+        <p class="amet">
+          Amet consectetur. Vulputate commodo felis molestie risus ornare nulla
+          amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant
+          adipiscing risus natoque aliquet. Id bibendum nunc senectus semper
+          tincidunt.
+        </p>
+        <button
+          class="btn-popular flex flex-row bg-[#FF5400] w-32 gap-5 rounded-md text-[#fff] pl-5 pr-3 pt-0.5 pb-0.5"
+        >
+          Read More
+        </button>
+      </div>
+      <div class="popular-right w-full">
+        <img src="./images/Rectangle4.png" alt="" class="popular-img" />
+      </div>
     </section>
     <!-- Choose section -->
     <section class="choose mt-10 ml-20 mr-20">
-        <div class="choose-top flex flex-col justify-center items-center">
-            <h1 class="choose-destination">Choose Your Destination</h1>
-            <p class="choose-para">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                Sodales dictumst nec nibh pellentesque.</p>
+      <div class="choose-top flex flex-col justify-center items-center">
+        <h1 class="choose-destination">Choose Your Destination</h1>
+        <p class="choose-para">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+      </div>
+      <div class="choose-down">
+        <div class="one grid grid-cols-2">
+          <div class="gridone">
+            <h1>Maldives</h1>
+          </div>
+          <div class="gridone">
+            <h1>Indonesia</h1>
+          </div>
         </div>
-        <div class="choose-down">
-            <div class="one grid grid-cols-2">
-                <div class="gridone">
-                    <h1>Maldives</h1>
-                </div>
-                <div class="gridone">
-                    <h1>Indonesia</h1>
-                </div>
-            </div>
-            <div class="two grid grid-cols-3">
-                <div class="gridone">
-                    <h1>Srilanka</h1>
-                </div>
-                <div class="gridone">
-                    <h1>North America</h1>
-                </div>
-                <div class="gridone">
-                    <h1>Kashmir</h1>
-                </div>
-            </div>
-            <div class="three grid grid-cols-2">
-                <div class="gridone">
-                    <h1>Banladesh</h1>
-                </div>
-                <div class="gridone">
-                    <h1>Bandarban</h1>
-                </div>
-            </div>
+        <div class="two grid grid-cols-3">
+          <div class="gridone">
+            <h1>Srilanka</h1>
+          </div>
+          <div class="gridone">
+            <h1>North America</h1>
+          </div>
+          <div class="gridone">
+            <h1>Kashmir</h1>
+          </div>
         </div>
+        <div class="three grid grid-cols-2">
+          <div class="gridone">
+            <h1>Banladesh</h1>
+          </div>
+          <div class="gridone">
+            <h1>Bandarban</h1>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- why-choose -->
     <section class="why-choose">
-        <div class="why-choosetop">
-            <div class="why-choosetop1"></div>
-            <div class="why-choosetop2"></div>
-        </div>
-        <div class="why-choosedown">
-            <div class="why-choosedown1"></div>
-         </div>
+      <div class="why-choosetop">
+        <div class="why-choosetop1"></div>
+        <div class="why-choosetop2"></div>
+      </div>
+      <div class="why-choosedown">
+        <div class="why-choosedown1"></div>
+      </div>
     </section>
     <!-- deals section -->
     <section class="deals"></section>
@@ -145,6 +191,5 @@
     <!-- Newsletter -->
     <section class="Newsletter"></section>
     <footer class="footer"></footer>
-</body>
-
+  </body>
 </html>
