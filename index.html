@@ -8,13 +8,16 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
     * {
+      font-family: 'Mulish', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
     }
   </style>
 </head>
-
 <body>
   <!-- header section -->
   <header class="header">
@@ -105,8 +108,8 @@
   <section class="choose-destination mx-20 mt-20 flex flex-col">
     <!-- popular heading -->
     <div class="choose-top flex flex-col justify-center items-center">
-      <h1 class="choose-destination text-[#131318] font-extrabold text-4xl">Choose Your Destination</h1>
-      <p class="choose-para text-gray-500 font-normal text-base my-7 text-center">
+      <h1 class="choose-destination text-[#131318] font-extrabold text-4xl font-mulish">Choose Your Destination</h1>
+      <p class="choose-para text-gray-500 font-normal text-base my-7 text-center font-mulish ">
         Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
         odio sit massa. <br> Sodales dictumst nec nibh pellentesque.
       </p>
@@ -116,14 +119,14 @@
       <!-- card 1 -->
       <div class="relative col-span-6 text-white">
         <img src="./images/popular/card1.png" alt="" class="w-full h-full" />
-        <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
+        <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2 font-mulish">
           Maldives
         </h3>
       </div>
       <!-- card 2 -->
       <div class="relative col-span-6 text-white">
         <img src="./images/popular/card2.png" alt="" class="w-full h-full" />
-        <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
+        <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2 ">
           Indonesia
         </h3>
       </div>
@@ -201,71 +204,74 @@
       </div>
     </div>
   </section>
-  <!-- deals section -->
-  <section class="deals mx-20 mt-20">
-    <div class="deals-top">
-      <div class="choose-top flex flex-col justify-center items-center">
-        <h1 class="choose-destination text-[#131318] font-extrabold text-4xl">Deals & Discounts</h1>
-        <p class="choose-para text-gray-500 font-normal text-base my-7 text-center">
-          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
-          odio sit massa. <br> Sodales dictumst nec nibh pellentesque.
-        </p>
+<!-- simple section -->
+  <section class="simple mx-20 my-20 flex flex-row gap-10">
+    <div class="popular-left w-[532px]">
+      <h1 class="our text-[#131318] text-5xl font-bold my-4 font-mulish">A Simple Perfect Place To Get Lost</h1>
+      <p class="dolar-site text-gray-500 my-4 font-mulish">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
+      <div class="text-[#000] my-4 leading-6">
+        <li class="my-3 font-mulish">
+          Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
+        </li>
+        <li class="my-3 font-mulish">
+          Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
+        </li>
+      </div>
+      <button class="btn-popular flex flex-row bg-[#FF5400] gap-5 rounded-md text-[#fff] px-12 py-3 mt-8 font-mulish">See
+        More</button>
+    </div>
+    <div class="right">
+      <div class="relative">
+        <img src="./images/hill.png" alt="" class="mount">
+      </div>
+      <div class="p absolute font-mulish">
+        <p>Watch Our Mountain in Bangladesh</p>
       </div>
     </div>
-    <div class="deals-down">
-      <div class="tour-santmartin1 relative">
-        <img src="./images/Rectangle13.png" alt="" class="tour1">
-        <div class="absolutee w-1/2 bg-white border-solid h-96 z-10">
-          <div class="icon flex flex-row">
-            <img src="./images/Frame(2).png" alt="">
-            <!-- <p>7 Day / 6 Night</p> -->
-          </div>
-          <div class="icon flex flex-row">
-            <img src="./images/Frame(1).png" alt="">
-            <p>Max : 10</p>
-          </div>
-          <div class="icon flex flex-row">
-            <img src="./images/vector4.png" alt="">
-            <p>Malaysia</p>
-          </div>
-        </div>
-      </div>
-      <div class="tour-santmartin2"></div>
-      <div class="tour-santmartin3"></div>
-    </div>
-  </section> -->
-  <!-- simple section -->
-  <section class="simple"></section>
+  </section>
   <!-- Newsletter -->
   <section class="Newsletter flex flex-row justify-between mx-20 my-10">
-    <div class="news flex flex-row">      
-      <div class="flex flex-col my-5">
-        <h1 class="font-normal text-6xl text-[#131318]">Newsletter</h1>
-      <p class="mt-5">Get your daily dose of travel news & tips. Sign up today!</p>
-        <input type="text" placeholder="Enter your name" class="pl-5 my-5 bg-[#1313180d] py-3 rounded-lg">
-        <input type="text" placeholder="Enter your email" class="pl-5 bg-[#1313180d] py-3 rounded-lg">
-        <button class="my-5 text-white bg-[#ff5400] text-3xl text-lg font-extrabold py-3 border-box rounded-lg">Subscribe</button>
+    <div class="news flex flex-row border border-rose-400 rounded-lg">
+      <div class="flex flex-col my-5 px-5 py-5">
+        <h1 class="font-bold text-6xl text-[#131318] font-mulish">Newsletter</h1>
+        <p class="mt-5 text-[#5A5A5D] text-base font-mulish">Get your daily dose of travel news & tips. Sign up today!
+        </p>
+        <input type="text" placeholder="Enter your name"
+          class="pl-5 my-5 bg-[#1313180d] py-3 rounded-lg hover:outline-none outline-none">
+        <input type="text" placeholder="Enter your email"
+          class="pl-5 bg-[#1313180d] py-3 rounded-lg hover:outline-none outline-none">
+        <button
+          class="my-5 font-mulish text-white bg-[#ff5400] text-3xl text-lg font-extrabold py-3 border-box rounded-lg">Subscribe</button>
       </div>
     </div>
     <div>
-      <img src="./images/Rectangle12.png" alt="">
+      <div class="relative">
+        <img src="./images/Rectangle12.png" alt="">
+      </div>
+      <div class="absolute bg-[#ff5400] text-white py-4 px-6 text-center rounded-lg -mt-36 right-24 -rotate-[25deg]">
+        <p class="font-mulish">Travel.com</p>
+        <h3 class="text-2xl font-semibold font-mulish">Save up to 70%</h3>
+      </div>
     </div>
+
   </section>
+  <!-- footer -->
   <footer class="footer  mt-20">
     <div class="footer-top py-10 flex flex-col justify-center items-center bg-[#1313180d]">
       <div class="left-nav flex flex-row gap-5">
         <img src="./images/Air.png" alt="" class="img-nav" />
         <h2 class="hero-travel font-bold text-3xl">
-          Hero <span class="text-[#FF5400]">Travel</span>
+          Hero <span class="text-[#FF5400] font-mulish">Travel</span>
         </h2>
       </div>
-      <p class="lorem text-center text-base font-normal text-[#5A5A5D] my-5">Lorem ipsum dolor sit amet consectetur.
+      <p class="lorem text-center text-base font-normal text-[#5A5A5D] my-5 font-mulish">Lorem ipsum dolor sit amet consectetur.
         Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo <br> erat maecenas vitae elementum ultricies
         nullam. </p>
       <div class="imag text-[#1313181a] pb-5 border-solid">
         <img src="./images/Social.png" alt="" class="1">
       </div>
-      <p class="last-line text-base font-light text-[#131318] my-10">2017, All Rights Reserved.</p>
+      <hr class="h-px w-[870px] bg-[#1313180d]">
+      <p class="last-line text-base font-light text-[#131318] my-10 font-inter">2017, All Rights Reserved.</p>
     </div>
   </footer>
 </body>
