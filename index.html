@@ -10,44 +10,54 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
     * {
       font-family: 'Mulish', sans-serif;
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-    }
+    } 
   </style>
 </head>
+
 <body>
   <!-- header section -->
   <header class="header">
-    <div class="lg:none">
-      <div class="left"></div>
-      <div class="right"></div>
+    <div class="md:hidden flex flex-row px-5 py-2 justify-between">
+      <div class="left">09:41</div>
+      <div class="right flex flex-row gap-3">
+        <img src="./images/Cellular Connection.svg" alt="">
+        <img src="./images/Wifi.svg" alt="">
+        <img src="./images/Battery.svg" alt="">
+      </div>
     </div>
-    <nav class="px-20 py-10 flex lg:flex-row flex-col justify-between items-center">
-      <div class="left-nav flex flex-row gap-5">
-        <img src="./images/Air.png" alt="" class="img-nav">
-        <h2 class="hero-travel font-bold text-3xl">
+    <nav class="lg:px-20 px-5 lg:py-10 py-4 flex flex-row justify-between items-center">
+      <div class="left-nav flex flex-row lg:gap-5 gap-2">
+        <img src="./images/Air.png" alt="" class="img-nav lg:h-auto h-7">
+        <h2 class="hero-travel font-bold lg:text-3xl text-lg">
           Hero <span class="text-[#FF5400]">Travel</span>
         </h2>
       </div>
-      <div class="right-nav flex flex-row gap-5 font-medium text-[#424247]">
+      <div class="right-nav hidden md:flex flex-row gap-5 font-medium text-[#424247]">
         <a class="text-[#FF5400] text-lg">Home</a>
         <a href="#" class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]">Packages</a>
         <a href="#" class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]">Testimonial</a>
         <a href="#" class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]">Blog</a>
         <a href="#" class="hover:text-[#FF5400] active:text-[#FF5400] focus:text-[#FF5400]">Contact</a>
       </div>
+
+      <div class="block md:hidden">
+        <img src='./images/Frame.svg' alt="Menu Icon"/>
+      </div>
     </nav>
   </header>
   <!-- banner section -->
   <section
-    class="bg-[url('./images/Rectangle1.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto lg:bg-no-repeat rounded-xl flex flex-col justify-center items-center relative">
-    <div class="bg-gradient-to-b rounded-xl from-black/70 to-black/5 lg:w-full w-[210px] h-full absolute"></div>
+    class="bg-[url('./images/Rectangle1.png')] lg:mt-10 mt-3 lg:ml-20 ml-3 lg:mr-20 ml-3 bg-cover py-24 max-w-9xl mx-auto lg:bg-no-repeat lg:rounded-xl rounded-md flex flex-col justify-center items-center relative">
+    <div class="bg-gradient-to-b lg:rounded-xl rounded-lg from-black/70 to-black/5 lg:w-full w-[310px] h-full absolute"></div>
 
     <div class="explore-travel flex flex-col justify-center items-center text-center z-10">
-      <h1 class="explore text-[#fff] font-bold lg:text-6xl text-xl">
+      <h1 class="explore text-[#fff] font-bold lg:text-6xl text-2xl">
         Explore Your Travel
       </h1>
       <p class="dolor-sit mt-6 text-center text-[#fff] lg:text-lg text-base lg:min-w-fit w-[200px]">
@@ -55,7 +65,8 @@
         adipiscing. In et odio <br />
         enim ac quis sapien urna eu phasellus.
       </p>
-      <div class="w-[800px] justify-between flex lg:flex-row flex-col items-center gap-5 bg-white/40 rounded-md mt-10 p-5">
+      <div
+        class="w-[800px] justify-between flex lg:flex-row flex-col items-center gap-5 bg-white/40 rounded-md mt-10 p-5">
         <input class="w-3/12 p-4 rounded-md outline-none" placeholder="When" />
         <div class="w-3/12">
           <select class="w-full p-4 rounded-md outline-none" id="">
@@ -80,9 +91,9 @@
     </div>
   </section>
   <!-- Popular section -->
-  <section class="Popular-section mx-20 mt-20 flex flex-row gap-28">
+  <section class="Popular-section lg:mx-20 mx-5  lg:mt-20 mt-10 flex lg:flex-row flex-col lg:gap-28 gap-10"> 
     <div class="popular-left w-full">
-      <h1 class="our text-[#131318] text-5xl font-bold">Our Popular Tours</h1>
+      <h1 class="our text-[#131318] lg:text-5xl text-2xl font-bold">Our Popular Tours</h1>
       <p class="dolar-site text-gray-500 my-4">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio
         sit massa.
         Sodales dictumst nec nibh pellentesque.</p>
@@ -104,12 +115,12 @@
       <button class="btn-popular flex flex-row bg-[#FF5400] gap-5 rounded-md text-[#fff] px-12 py-3">Read
         More</button>
     </div>
-    <div class="Popular-section w-full">
+    <div class="Popular-section w-full ">
       <img src="./images/Popularcard.png" alt="" class="mount">
     </div>
   </section>
   <!-- choose destination -->
-  <section class="choose-destination mx-20 mt-20 flex flex-col">
+  <section class="choose-destination lg:mx-20 mx-5 lg:mt-20 mt-5 flex flex-col">
     <!-- popular heading -->
     <div class="choose-top flex flex-col justify-center items-center">
       <h1 class="choose-destination text-[#131318] font-extrabold text-4xl font-mulish">Choose Your Destination</h1>
@@ -119,7 +130,7 @@
       </p>
     </div>
     <!-- popular card container -->
-    <div class="grid grid-cols-12 gap-5">
+    <div class="grid lg:grid-cols-12 gap-5">
       <!-- card 1 -->
       <div class="relative col-span-6 text-white">
         <img src="./images/popular/card1.png" alt="" class="w-full h-full" />
@@ -135,7 +146,7 @@
         </h3>
       </div>
       <!-- card 3 -->
-      <div class="relative col-span-3 text-white">
+      <div class="relative lg:col-span-3 col-span-6 text-white">
         <img src="./images/popular/card3.png" alt="" class="w-full h-full" />
         <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
           Srilanka
@@ -149,21 +160,21 @@
         </h3>
       </div>
       <!-- card 5 -->
-      <div class="relative col-span-3 text-white">
+      <div class="relative lg:col-span-3 col-span-6 text-white">
         <img src="./images/popular/card5.png" alt="" class="w-full h-full" />
         <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
           Kashmir
         </h3>
       </div>
       <!-- card 6 -->
-      <div class="relative col-span-5 text-white">
+      <div class="relative lg:col-span-5 col-span-6 text-white">
         <img src="./images/popular/card6.png" alt="" class="w-full h-full" />
         <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
           Banladesh
         </h3>
       </div>
       <!-- card 7 -->
-      <div class="relative col-span-7 text-white">
+      <div class="relative lg:col-span-7 col-span-6 text-white">
         <img src="./images/popular/card7.png" alt="" class="w-full h-full" />
         <h3 class="absolute top-1/2 left-1/2 text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
           Bandarban
@@ -172,16 +183,16 @@
     </div>
   </section>
   <!-- why-choose -->
-  <section class="why-choose mx-20 mt-20">
+  <section class="why-choose lg:mx-20 mx-5 lg:mt-20 mt-10">
     <div class="choose-top flex flex-col justify-center items-center">
-      <h1 class="choose-destination text-[#131318] font-extrabold text-4xl">Why Choose Us</h1>
-      <p class="choose-para text-gray-500 font-normal text-base my-7 text-center">
+      <h1 class="choose-destination text-[#131318] font-extrabold lg:text-4xl text-2xl">Why Choose Us</h1>
+      <p class="choose-para text-gray-500 font-normal text-base lg:my-7 my-3 text-center">
         Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
         odio sit massa. <br> Sodales dictumst nec nibh pellentesque.
       </p>
     </div>
     <div class="why-choosedown">
-      <div class="two-card flex flex-row gap-5">
+      <div class="two-card flex lg:flex-row flex-col gap-5">
         <div class="why-choosedown1 p-10 bg-red-50 rounded-lg">
           <img src="./images/hotel1.png" alt="" class="why1">
           <h1 class="handpicked text-[#131318] font-bold text-xl my-5">Handpicked Hotels</h1>
@@ -197,7 +208,7 @@
           </p>
         </div>
       </div>
-      <div class="why-choosedown2 w-[600px] m-auto bg-rose-50 mt-5 rounded-lg">
+      <div class="why-choosedown2 lg:w-[600px]  m-auto bg-rose-50 mt-5 rounded-lg">
         <div class="why-choosedown1 p-10">
           <img src="./images/price-tag1.png" alt="" class="why1">
           <h1 class="handpicked text-[#131318] font-bold text-xl my-5">Best Price Guarantee</h1>
@@ -211,18 +222,18 @@
   <!-- deals and discount -->
   <section>
     <div class="deals-top flex flex-col justify-center items-center mt-14">
-      <h1 class="choose-destination text-[#131318] font-extrabold text-4xl font-mulish">Deals & Discounts</h1>
-      <p class="choose-para text-gray-500 font-normal text-base my-7 text-center font-mulish ">
+      <h1 class="choose-destination text-[#131318] font-extrabold lg:text-4xl text-2xl font-mulish">Deals & Discounts</h1>
+      <p class="choose-para text-gray-500 font-normal text-base lg:my-7 my-3 lg:mx-auto mx-5 text-center font-mulish ">
         Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
         odio sit massa. <br> Sodales dictumst nec nibh pellentesque.
       </p>
     </div>
     <div
-  class="bg-[url('./images/santmartin.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-row justify-between items-center relative">
+      class="bg-[url('./images/santmartin.png')] lg:mt-10 mt-3 lg:ml-20 ml-5 lg:mr-20 mr-5 bg-cover lg:py-24 py-3 lg:max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-row justify-between items-center relative">
       <div class="left ">
       </div>
-      <div class="right w-[50%] mr-10 bg-white  rounded-lg p-12 opacity-70">
-        <div class="flex flex-row gap-8">
+      <div class="right lg:w-[50%] w-[97%] lg:mr-10 mr-3 lg:ml-auto ml-3 bg-white  rounded-lg lg:p-12 p-2 opacity-70">
+        <div class="flex lg:flex-row flex-col lg:gap-8 gap-2">
           <div class="one flex flex-row gap-3">
             <img src="./images/Frame(2).png" alt="">
             <p>7 Day / 6 Night</p>
@@ -238,20 +249,21 @@
         </div>
         <div class="two">
           <h2 class="font-bold leading-loose text-2xl">Tour To Satorini</h2>
-          <p class="text-[#5A5A5D] font-normal text-base">Amet consectetur. Vulputate commodo felis 
-            molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-            <p class="leading-10 text-[#FF5400] font-bold">Price: $1300-$1500</p>
-            <button class="bg-[#FF5400] text-white py-4 px-12 rounded-md mt-6">
-              Book Now
-            </button>
+          <p class="text-[#5A5A5D] font-normal text-base">Amet consectetur. Vulputate commodo felis
+            molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.
+          </p>
+          <p class="leading-10 text-[#FF5400] font-bold">Price: $1300-$1500</p>
+          <button class="bg-[#FF5400] text-white py-4 px-12 rounded-md mt-6">
+            Book Now
+          </button>
         </div>
       </div>
-</div>
-  <div
-  class="bg-[url('./images/maldip.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-row justify-between items-center relative">
-      
-      <div class="left w-[50%] ml-10 bg-white  rounded-lg p-12 opacity-70">
-        <div class="flex flex-row gap-8">
+    </div>
+    <div
+      class="bg-[url('./images/maldip.png')] lg:mt-10 mt-3 lg:ml-20 ml-5 lg:mr-20 mr-5 bg-cover lg:py-24 py-3 lg:max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-row justify-between items-center relative">
+
+      <div class="left lg:w-[50%] w-[97%] lg:ml-10 ml-3 bg-white  rounded-lg lg:p-12 p-2 opacity-70">
+        <div class="flex lg:flex-row flex-col lg:gap-8 gap-2">
           <div class="one flex flex-row gap-3">
             <img src="./images/Frame(2).png" alt="">
             <p>7 Day / 6 Night</p>
@@ -267,23 +279,24 @@
         </div>
         <div class="two">
           <h2 class="font-bold leading-loose text-2xl">Tour To Satorini</h2>
-          <p class="text-[#5A5A5D] font-normal text-base">Amet consectetur. Vulputate commodo felis 
-            molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-            <p class="leading-10 text-[#FF5400] font-bold">Price: $1300-$1500</p>
-            <button class="bg-[#FF5400] text-white py-4 px-12 rounded-md mt-6">
-              Book Now
-            </button>
+          <p class="text-[#5A5A5D] font-normal text-base">Amet consectetur. Vulputate commodo felis
+            molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.
+          </p>
+          <p class="leading-10 text-[#FF5400] font-bold">Price: $1300-$1500</p>
+          <button class="bg-[#FF5400] text-white py-4 px-12 rounded-md mt-6">
+            Book Now
+          </button>
         </div>
       </div>
       <div class="right">
       </div>
-</div>
-  <div
-  class="bg-[url('./images/santmartin.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-row justify-between items-center relative">
+    </div>
+    <div
+      class="bg-[url('./images/santmartin.png')] lg:mt-10 mt-3 lg:ml-20 ml-5 lg:mr-20 mr-5 bg-cover lg:py-24 py-3 lg:max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-row justify-between items-center relative">
       <div class="left ">
       </div>
-      <div class="right w-[50%] mr-10 bg-white  rounded-lg p-12 opacity-70">
-        <div class="flex flex-row gap-8">
+      <div class="right lg:w-[50%] w-[97%] lg:mr-10 mr-3 lg:ml-auto ml-3 bg-white  rounded-lg lg:p-12 p-2 opacity-70">
+        <div class="flex lg:flex-row flex-col lg:gap-8 gap-2">
           <div class="one flex flex-row gap-3">
             <img src="./images/Frame(2).png" alt="">
             <p>7 Day / 6 Night</p>
@@ -299,49 +312,54 @@
         </div>
         <div class="two">
           <h2 class="font-bold leading-loose text-2xl">Tour To Satorini</h2>
-          <p class="text-[#5A5A5D] font-normal text-base">Amet consectetur. Vulputate commodo felis 
-            molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.</p>
-            <p class="leading-10 text-[#FF5400] font-bold">Price: $1300-$1500</p>
-            <button class="bg-[#FF5400] text-white py-4 px-12 rounded-md mt-6">
-              Book Now
-            </button>
+          <p class="text-[#5A5A5D] font-normal text-base">Amet consectetur. Vulputate commodo felis
+            molestie risus ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing.
+          </p>
+          <p class="leading-10 text-[#FF5400] font-bold">Price: $1300-$1500</p>
+          <button class="bg-[#FF5400] text-white py-4 px-12 rounded-md mt-6">
+            Book Now
+          </button>
         </div>
       </div>
-</div>
+    </div>
   </section>
-<!-- simple section -->
-  <section class="simple mx-20 my-20 flex flex-row gap-10">
-    <div class="popular-left w-[532px]">
-      <h1 class="our text-[#131318] text-5xl font-bold my-4 font-mulish">A Simple Perfect Place To Get Lost</h1>
-      <p class="dolar-site text-gray-500 my-4 font-mulish">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
-      <div class="text-[#000] my-4 leading-6">
+  <!-- simple section -->
+  <section class="simple lg:mx-20 mx-5 lg:my-20 my-5 flex lg:flex-row flex-col lg:gap-10 gap-2">
+    <div class="popular-left lg:w-[532px]">
+      <h1 class="our text-[#131318] lg:text-5xl text-2xl font-bold lg:my-4 my-1 font-mulish">A Simple Perfect Place To Get Lost</h1>
+      <p class="dolar-site text-gray-500 my-4 font-mulish">Amet consectetur. Vulputate commodo felis molestie risus
+        ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis.</p>
+      <div class="text-[#000] lg:my-4 my-0 lg:leading-6 leading-3">
         <li class="my-3 font-mulish">
           Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
         </li>
-        <li class="my-3 font-mulish">
+        <li class="lg:my-3 my-1 font-mulish">
           Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
         </li>
       </div>
-      <button class="btn-popular flex flex-row bg-[#FF5400] gap-5 rounded-md text-[#fff] px-12 py-3 mt-8 font-mulish">See
+      <button
+        class="btn-popular flex flex-row bg-[#FF5400] lg:gap-5 gap-2 rounded-md text-[#fff] lg:px-12 px-2 py-3 lg:mt-8 mt-2 font-mulish">See
         More</button>
     </div>
     <div class="right">
       <div class="">
         <img src="./images/hill.png" alt="" class="relative">
-        <video controls class="h-20 w-[610px] rounded-lg absolute z-10 -mt-20 bg-[linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%)] opacity-28" src="./images/hill.png">
-          
+        <video controls
+          class="h-20 lg:w-[610px] w-[450px] rounded-lg absolute z-10 -mt-20 bg-[linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%)] opacity-28"
+          src="./images/hill.png">
+
         </video>
       </div>
-      <div class=" font-mulish absolute text-white text-2xl font-semibold -mt-60 pl-24 ">
-      <p>Watch Our Mountain in Bangladesh</p>
+      <div class=" font-mulish absolute text-white lg:text-2xl text-base font-semibold -mt-60 pl-24 ">
+        <p>Watch Our Mountain in Bangladesh</p>
       </div>
     </div>
   </section>
   <!-- Newsletter -->
-  <section class="Newsletter flex flex-row justify-between mx-20 my-10">
+  <section class="Newsletter flex lg:flex-row flex-col justify-between lg:mx-20 mx-5 lg:my-10 my-5">
     <div class="news flex flex-row border border-rose-400 rounded-lg">
       <div class="flex flex-col my-5 px-5 py-5">
-        <h1 class="font-bold text-6xl text-[#131318] font-mulish">Newsletter</h1>
+        <h1 class="font-bold lg:text-6xl text-2xl text-[#131318] font-mulish">Newsletter</h1>
         <p class="mt-5 text-[#5A5A5D] text-base font-mulish">Get your daily dose of travel news & tips. Sign up today!
         </p>
         <input type="text" placeholder="Enter your name"
@@ -353,26 +371,27 @@
       </div>
     </div>
     <div>
-      <div class="relative">
+      <div class="relative lg:my-auto my-3">
         <img src="./images/Rectangle12.png" alt="">
       </div>
-      <div class="absolute bg-[#ff5400] text-white py-4 px-6 text-center rounded-lg -mt-36 right-24 -rotate-[25deg]">
+      <div class="absolute bg-[#ff5400] text-white lg:py-4 py-2 lg:px-6 px-3 text-center rounded-lg lg:-mt-36 -mt-24 lg:right-24 right-6 -rotate-[25deg]">
         <p class="font-mulish">Travel.com</p>
-        <h3 class="text-2xl font-semibold font-mulish">Save up to 70%</h3>
+        <h3 class="lg:text-2xl text-sm font-semibold font-mulish">Save up to 70%</h3>
       </div>
     </div>
 
   </section>
   <!-- footer -->
-  <footer class="footer  mt-20">
-    <div class="footer-top py-10 flex flex-col justify-center items-center bg-[#1313180d]">
+  <footer class="footer  lg:mt-20 mt-5">
+    <div class="footer-top lg:px-auto px-5 lg:py-10  flex flex-col justify-center items-center bg-[#1313180d]">
       <div class="left-nav flex flex-row gap-5">
         <img src="./images/Air.png" alt="" class="img-nav" />
         <h2 class="hero-travel font-bold text-3xl">
           Hero <span class="text-[#FF5400] font-mulish">Travel</span>
         </h2>
       </div>
-      <p class="lorem text-center text-base font-normal text-[#5A5A5D] my-5 font-mulish">Lorem ipsum dolor sit amet consectetur.
+      <p class="lorem text-center text-base font-normal text-[#5A5A5D] my-5 font-mulish">Lorem ipsum dolor sit amet
+        consectetur.
         Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo <br> erat maecenas vitae elementum ultricies
         nullam. </p>
       <div class="imag text-[#1313181a] pb-5 border-solid">
