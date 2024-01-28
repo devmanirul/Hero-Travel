@@ -21,9 +21,13 @@
 <body>
   <!-- header section -->
   <header class="header">
-    <nav class="px-20 py-10 flex flex-row justify-between items-center">
+    <div class="lg:none">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <nav class="px-20 py-10 flex lg:flex-row flex-col justify-between items-center">
       <div class="left-nav flex flex-row gap-5">
-        <img src="./images/Air.png" alt="" class="img-nav" />
+        <img src="./images/Air.png" alt="" class="img-nav">
         <h2 class="hero-travel font-bold text-3xl">
           Hero <span class="text-[#FF5400]">Travel</span>
         </h2>
@@ -39,19 +43,19 @@
   </header>
   <!-- banner section -->
   <section
-    class="bg-[url('./images/Rectangle1.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto bg-no-repeat rounded-xl flex flex-col justify-center items-center relative">
-    <div class="bg-gradient-to-b rounded-xl from-black/70 to-black/5 w-full h-full absolute"></div>
+    class="bg-[url('./images/Rectangle1.png')] mt-10 ml-20 mr-20 bg-cover py-24 max-w-9xl mx-auto lg:bg-no-repeat rounded-xl flex flex-col justify-center items-center relative">
+    <div class="bg-gradient-to-b rounded-xl from-black/70 to-black/5 lg:w-full w-[210px] h-full absolute"></div>
 
     <div class="explore-travel flex flex-col justify-center items-center text-center z-10">
-      <h1 class="explore text-[#fff] font-bold text-6xl">
+      <h1 class="explore text-[#fff] font-bold lg:text-6xl text-xl">
         Explore Your Travel
       </h1>
-      <p class="dolor-sit mt-6 text-center text-[#fff]">
+      <p class="dolor-sit mt-6 text-center text-[#fff] lg:text-lg text-base lg:min-w-fit w-[200px]">
         Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
         adipiscing. In et odio <br />
         enim ac quis sapien urna eu phasellus.
       </p>
-      <div class="w-[800px] justify-between flex flex-row items-center gap-5 bg-white/40 rounded-md mt-10 p-5">
+      <div class="w-[800px] justify-between flex lg:flex-row flex-col items-center gap-5 bg-white/40 rounded-md mt-10 p-5">
         <input class="w-3/12 p-4 rounded-md outline-none" placeholder="When" />
         <div class="w-3/12">
           <select class="w-full p-4 rounded-md outline-none" id="">
